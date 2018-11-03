@@ -13,7 +13,8 @@
           <div id="content" class="collapse" data-parent="#tugasprognet">
             <div class="card-body">
               <div class="list-group">
-                <a href="/mahasiswa" class="list-group-item list-group-item-action">CRUD Mahasiswa w/ Laravel</a>
+                <a href="/mahasiswa" class="list-group-item list-group-item-action">Tugas 1 - Aplikasi Laravel</a>
+                <a href="/prodi_mahasiswa" class="list-group-item list-group-item-action">Tugas 2 - Mahasiswa dan Prodi</a>
               </div>
             </div>
           </div>

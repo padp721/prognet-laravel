@@ -29,3 +29,6 @@ Route::post('daftar', 'Auth\RegisterController@register');
 Route::get('login', 'Auth\LoginController@showLoginForm');
 Route::post('login', 'Auth\LoginController@login');
 Route::get('logout', 'Auth\LoginController@logout');
+
+//Route Mahasiswa + Prodi
+Route::resource('prodi_mahasiswa', 'MahasiswaController');

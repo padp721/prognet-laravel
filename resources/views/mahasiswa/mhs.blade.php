@@ -36,9 +36,9 @@
                             <td colspan="9"><center><h3>Tidak ada data!</h3></center></td>
                         </tr>
                      @else
-                        @foreach ($data as $no => $row)
+                        @foreach ($data as $row)
                             <tr>
-                                <td>{{ ++$no }}</td>
+                                <td>{{ $loop->iteration }}</td>
                                 <td>{{ $row->nim }}</td>
                                 <td>{{ $row->nama }}</td>
                                 <td>{{ $row->alamat }}</td>
