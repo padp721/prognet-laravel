@@ -39,7 +39,7 @@
                                 <td>{{ $row->nim }}</td>
                                 <td>{{ $row->nama }}</td>
                                 <td>{{ $row->alamat }}</td>
-                                <td>{{ $row->nama_prodi }}</td>
+                                <td>{{ $row->prodi->nama_prodi }}</td>
                                 <td><a href="{{ route('prodi_mahasiswa.edit', $row->id) }}" class="btn btn-success btn-sm" role="button">Ubah</a></td>
                                 <td>
                                   <form method="POST" action="{{ route('prodi_mahasiswa.destroy', $row->id) }}">

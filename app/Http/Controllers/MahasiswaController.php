@@ -17,12 +17,8 @@ class MahasiswaController extends Controller
      */
     public function index()
     {
-        //
-        $data = DB::table('mahasiswas')
-            ->join('prodis', 'prodis.id', '=', 'mahasiswas.prodi')
-            ->select('mahasiswas.id as id', 'mahasiswas.nama as nama', 'mahasiswas.nim as nim', 'mahasiswas.alamat as alamat', 'prodis.nama_prodi as nama_prodi')
-            ->get();
-        
+        $data = Mahasiswa::all();
+
         return view('prodi_mahasiswa.index')
             ->with('data', $data);
     }
