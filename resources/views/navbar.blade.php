@@ -8,6 +8,8 @@
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="color:white;">Halo, {{ Auth::user()->name }}!</a>
             <div class="dropdown-menu dropdown-menu-right">
+                <a href="https://github.com/randomize721/prognet-laravel" class="dropdown-item" target="_blank">Source</a>
+                <div class="dropdown-divider"></div>
                 <a href="logout" class="dropdown-item">Logout</a>
             </div>
         </li>
