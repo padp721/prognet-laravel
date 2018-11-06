@@ -49,7 +49,7 @@ class MahasiswaController extends Controller
         $data->nim = $request->nim;
         $data->nama = $request->nama;
         $data->alamat = $request->alamat;
-        $data->prodi = $request->prodi;
+        $data->prodi_id = $request->prodi;
         $data->save();
         return redirect('/prodi_mahasiswa')->with('status', 'Data berhasil ditambahkan!');
     }
@@ -96,7 +96,7 @@ class MahasiswaController extends Controller
         $data->nim = $request->nim;
         $data->nama = $request->nama;
         $data->alamat = $request->alamat;
-        $data->prodi = $request->prodi;
+        $data->prodi_id = $request->prodi;
         $data->save();
         return redirect('/prodi_mahasiswa')->with('status', 'Data berhasil diedit!');
     }

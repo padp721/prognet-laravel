@@ -44,7 +44,7 @@
               <select class="form-control" id="prodi" name="prodi" required>
                 <option value="">Program Studi</option>
                 @foreach ($prodi as $list)
-                <option value="{{ $list->id }}" @if ($data->prodi == $list->id)
+                <option value="{{ $list->id }}" @if ($data->prodi_id == $list->id)
                   selected                    
                 @endif>{{ $list->nama_prodi }}</option>
                 @endforeach
